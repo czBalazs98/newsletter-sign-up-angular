@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-newsletter-sign-up',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class NewsletterSignUpComponent {
 
+  emailAddress = new FormControl('', [Validators.required, Validators.email]);
+
+  subscribe() {
+    if (this.emailAddress.valid) {
+      console.log(this.emailAddress.value);
+    }
+  }
 }
