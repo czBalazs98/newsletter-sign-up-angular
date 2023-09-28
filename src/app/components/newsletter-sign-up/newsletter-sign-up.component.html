@@ -24,8 +24,8 @@
         <p class="text-red-400" *ngIf="emailAddress.invalid && emailAddress.touched">Valid email required</p>
       </div>
       <input
-        class="w-full rounded-md focus:outline-none border-gray-400 border-2 text-gray-400 p-3 mt-1"
-        [ngClass]="emailAddress.invalid && emailAddress.touched ? 'bg-red-100 text-red-400 border-red-400' : ''"
+        class="w-full rounded-md focus:outline-none border-gray-400 focus:border-black hover:border-black border-2 p-3 mt-1"
+        [ngClass]="emailAddress.invalid && emailAddress.touched ? 'bg-red-100 text-red-400 border-red-200 focus:border-red-400 hover:border-red-400' : ''"
         id="email-address"
         type="email"
         placeholder="email@company.com"
