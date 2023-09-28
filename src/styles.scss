@@ -3,3 +3,24 @@
 @tailwind utilities;
 
 @import "colors.scss";
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+  font-weight: 700;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto;
+}
+
+.bg-dark-slate-grey {
+  background-color: $dark-slate-grey;
+}

@@ -1,0 +1,32 @@
+<div class="flex p-4 bg-white rounded-2xl">
+  <div class="px-8 py-16">
+    <h1 class="text-5xl font-bold mb-7">Stay updated!</h1>
+
+    <p class="mb-7">
+      Join 60,000+ product managers receiving monthly updates on:
+    </p>
+
+    <app-newsletter-list-item
+      text="Product discovery and building what matters"
+    ></app-newsletter-list-item>
+    <app-newsletter-list-item
+      text="Measuring to ensure updates are a succes"
+    ></app-newsletter-list-item>
+    <app-newsletter-list-item text="And much more!"></app-newsletter-list-item>
+
+    <form class="mt-12">
+      <label class="font-bold text-sm" for="email-address"
+        >E-mail address</label
+      >
+      <input
+        class="w-full rounded-md focus:outline-none border-gray-400 border-2 text-gray-400 p-3 mt-1"
+        id="email-address"
+        type="email"
+        placeholder="email@company.com"
+      />
+
+      <button class="w-full bg-dark-slate-grey text-white rounded-md py-4 mt-5" type="submit">Subscribe to monthly newsletter</button>
+    </form>
+  </div>
+  <img class="h-full" src="../../../assets/images/illustration-sign-up-desktop.svg" />
+</div>

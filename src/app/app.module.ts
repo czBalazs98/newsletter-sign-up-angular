@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { NewsletterSignUpComponent } from './components/newsletter-sign-up/newsletter-sign-up.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NewsletterListItemComponent } from './newsletter-list-item/newsletter-list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewsletterSignUpComponent,
+    FooterComponent,
+    NewsletterListItemComponent
   ],
   imports: [
     BrowserModule
