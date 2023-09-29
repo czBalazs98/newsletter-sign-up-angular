@@ -24,3 +24,8 @@ body {
 .bg-dark-slate-grey {
   background-color: $dark-slate-grey;
 }
+
+.subscribe-button:hover {
+  background: linear-gradient(to right, $tomato 50%, orange);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
