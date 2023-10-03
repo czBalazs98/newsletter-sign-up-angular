@@ -1,5 +1,5 @@
 <div
-  class="flex flex-col-reverse sm:flex-row sm:p-4 bg-white rounded-none sm:rounded-2xl h-full"
+  class="flex flex-col-reverse sm:flex-row sm:p-4 bg-white rounded-none sm:rounded-2xl"
 >
   <div class="px-8 py-16">
     <h1 class="text-5xl font-bold mb-7">Stay updated!</h1>
@@ -12,7 +12,7 @@
       text="Product discovery and building what matters"
     ></app-newsletter-list-item>
     <app-newsletter-list-item
-      text="Measuring to ensure updates are a succes"
+      text="Measuring to ensure updates are a success"
     ></app-newsletter-list-item>
     <app-newsletter-list-item text="And much more!"></app-newsletter-list-item>
 
@@ -21,11 +21,11 @@
         <label for="email-address"
           >E-mail address</label
         >
-        <p class="text-red-400" *ngIf="emailAddress.invalid && emailAddress.touched">Valid email required</p>
+        <p class="text-red-400" *ngIf="emailAddress.invalid && emailAddress.dirty">Valid email required</p>
       </div>
       <input
         class="w-full rounded-md focus:outline-none border-gray-400 focus:border-black hover:border-black border-2 p-3 mt-1"
-        [ngClass]="emailAddress.invalid && emailAddress.touched ? 'bg-red-100 text-red-400 border-red-200 focus:border-red-400 hover:border-red-400' : ''"
+        [ngClass]="emailAddress.invalid && emailAddress.dirty ? 'bg-red-100 text-red-400 border-red-200 focus:border-red-400 hover:border-red-400' : ''"
         id="email-address"
         type="email"
         placeholder="email@company.com"
@@ -33,7 +33,7 @@
       />
 
       <button
-        class="subscribe-button w-full bg-dark-slate-grey text-white rounded-md py-4 mt-5"
+        class="function-button w-full bg-dark-slate-grey text-white rounded-md py-4 mt-5"
         (click)="subscribe()"
       >
         Subscribe to monthly newsletter
