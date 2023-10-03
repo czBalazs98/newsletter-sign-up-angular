@@ -1,0 +1,22 @@
+<div
+  class="bg-white rounded-none sm:rounded-2xl p-12 max-w-lg flex flex-col flex-grow"
+>
+  <div class="space-y-5 flex-grow">
+    <img src="../../../assets/images/icon-success.svg" alt="Success icon" />
+
+    <h1 class="text-5xl font-bold">Thanks for subscribing!</h1>
+
+    <p>
+      A confirmation email has been sent to <b>{{ emailAddress }}</b
+      >. Please open it and click the button inside to confirm your
+      subscription.
+    </p>
+  </div>
+
+  <button
+    class="function-button w-full bg-dark-slate-grey text-white rounded-md py-4 mt-5"
+    (click)="redirectToSignUp()"
+  >
+    Dismiss message
+  </button>
+</div>

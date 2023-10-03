@@ -7,13 +7,15 @@ import { NewsletterSignUpComponent } from './components/newsletter-sign-up/newsl
 import { FooterComponent } from './components/footer/footer.component';
 import { NewsletterListItemComponent } from './components/newsletter-list-item/newsletter-list-item.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NewsletterSignUpSuccessComponent } from './components/newsletter-sign-up-success/newsletter-sign-up-success.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsletterSignUpComponent,
     FooterComponent,
-    NewsletterListItemComponent
+    NewsletterListItemComponent,
+    NewsletterSignUpSuccessComponent
   ],
   imports: [
     BrowserModule,

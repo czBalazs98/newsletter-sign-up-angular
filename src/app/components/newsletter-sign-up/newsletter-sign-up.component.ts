@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-newsletter-sign-up',
@@ -8,11 +9,15 @@ import { FormControl, Validators } from '@angular/forms';
 })
 export class NewsletterSignUpComponent {
 
+  constructor(private router: Router) { }
+
   emailAddress = new FormControl('', [Validators.required, Validators.email]);
 
   subscribe() {
     if (this.emailAddress.valid) {
-      console.log(this.emailAddress.value);
+      this.router.navigate(['/sign-up-success/' + this.emailAddress.value]);
+    } else {
+      this.emailAddress.markAsDirty();
     }
   }
 }
